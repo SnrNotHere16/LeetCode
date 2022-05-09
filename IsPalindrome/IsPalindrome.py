@@ -4,14 +4,15 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        num = str(x)
-        i = 0 
+        num = str(x) 
+        i = 0; 
         e = len(num)-1
-
-        while (i < e ): 
-         if (num[i] != num[e]):
-            return False 
-         else: 
-            i+=1
-            e-=1
-        return True
+        if (x < 0): 
+            return False
+        while (i < e):
+            if (num[i]!=num[e]):
+                return False 
+            else :
+                e-=1 
+                i+=1
+        return True 
