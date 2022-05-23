@@ -1,3 +1,5 @@
+uint32_t reverseBits(uint32_t n) {
+    uint32_t o = n; 
     uint32_t r = 0; 
     printf("%x %d\n", n,n); 
     for (int i = 0; i < 31; i++){
