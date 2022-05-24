@@ -4,10 +4,6 @@ uint32_t reverseBits(uint32_t n) {
         if (n&(UINT32_C(0x0001) << i)){
             r += UINT32_C(0x0001)<<(31-i);
         }
-        else { 
-            r += 0; 
-        }
-        
     }  
     return r; 
 }
