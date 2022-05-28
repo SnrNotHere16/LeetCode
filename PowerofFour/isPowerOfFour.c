@@ -25,7 +25,7 @@ bool isPowerOfFour (int n) {
         else if (n == 1)
                 return true;
         else
-                //start at 0x04, need to shift up to position 30, so 28 
+                //start at 0x04, need to shift up to position 30, so 28 shifts
                 for (int i = 0; i < 15; i++) {
                         if ((n&(0x04<<(2*i))) && ((n&(n-1)) == 0))
                                        return true;
