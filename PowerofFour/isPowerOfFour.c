@@ -18,8 +18,11 @@ bool isPowerOfFour (int n) {
                                  return true; 
                 }
         return false;
-		*/ 
+		*/
+
+		
 		//loop solution 2 
+		/*
 		if (n < 1)
 				return false;
         else if (n == 1)
@@ -30,7 +33,15 @@ bool isPowerOfFour (int n) {
                         if ((n&(0x04<<(2*i))) && ((n&(n-1)) == 0))
                                        return true;
                 }
-
         return false;
-
+		*/
+	
+	
+		//No loop solution 
+	     //Check it is a non-negative number 
+        if (n<0)
+                return false; 
+        //First part checks to see only one bit is 1(power of 2)
+        //second expression checks to see it is a power of 4 
+        else return ( (n&(n-1)) == 0 && (n&0x55555555));
 }
