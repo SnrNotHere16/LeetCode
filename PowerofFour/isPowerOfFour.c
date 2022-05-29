@@ -38,7 +38,7 @@ bool isPowerOfFour (int n) {
 	
 	
 		//No loop solution 
-	     //Check it is a non-negative number 
+	    //Check it is a non-negative number 
         if (n<0)
                 return false; 
         //First part checks to see only one bit is 1(power of 2)
