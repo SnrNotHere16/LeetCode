@@ -19,6 +19,7 @@ bool isPowerOfThree(int n) {
 		*/ 
 		
 		//Loop solution 2
+		/*
         int t = 1162261467;
 
         if (n < 0)
@@ -33,7 +34,8 @@ bool isPowerOfThree(int n) {
                                 t=t/3;
                 }
         return false;
+		*/ 
+		//non loop solution 
+		return n > 0 && 1162261467 % n == 0;
 
-        
-        
 } 
